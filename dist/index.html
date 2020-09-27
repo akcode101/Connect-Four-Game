@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<!---Player 1 is red, player 2 is blue --->
+
+
+<!---How I generatd buttons in correct order
+
+	for i in range(5,-1,-1):
+	    for j in range(7):
+	        print( "<div id=\"{}\">{}</div>".format(i+j*6,i+j*6))
+--->
+
+
+<!--- Columns go from left to right numbered 0 to 6, rows go from 0 to 7 from bottom to up --->
+
+<html lang="en">
+
+	<head>
+	        <meta charset="UTF-8">
+	        <link type="text/css" rel="stylesheet" href="css/style.css">
+	        <title>Connect Four!</title>
+	</head>
+	<body>
+
+		<h1>Connect Four Game! </h1>
+
+		<p>Red represents player 1, blue represents player 2!</p>
+
+		<div class = "scoreBoard">
+			<div id="player1Score">Player 1 Score: 0 </div>
+            <div id="player2Score">Player 2 Score: 0 </div>	
+		</div>
+        
+        <div class = "gameContainer">
+			<div id="playerTurn">Player 1's Turn </div>
+			<button id="newGame">New Game</button>
+		</div>
+
+		<div class="columnButtons">
+			<button id="col0" class="possibleColumn">col0</button>
+			<button id="col1" class="possibleColumn">col1</button>
+			<button id="col2" class="possibleColumn">col2 </button>
+			<button id="col3" class="possibleColumn">col3</button>
+			<button id="col4" class="possibleColumn">col4</button>
+			<button id="col5" class="possibleColumn">col5</button>
+			<button id="col6" class="possibleColumn">col6</button>
+
+		</div>
+
+		<div class="grid-container">
+			<div id="sq5">5</div>
+			<div id="sq11">11</div>
+			<div id="sq17">17</div>
+			<div id="sq23">23</div>
+			<div id="sq29">29</div>
+			<div id="sq35">35</div>
+			<div id="sq41">41</div>
+			<div id="sq4">4</div>
+			<div id="sq10">10</div>
+			<div id="sq16">16</div>
+			<div id="sq22">22</div>
+			<div id="sq28">28</div>
+			<div id="sq34">34</div>
+			<div id="sq40">40</div>
+			<div id="sq3">3</div>
+			<div id="sq9">9</div>
+			<div id="sq15">15</div>
+			<div id="sq21">21</div>
+			<div id="sq27">27</div>
+			<div id="sq33">33</div>
+			<div id="sq39">39</div>
+			<div id="sq2">2</div>
+			<div id="sq8">8</div>
+			<div id="sq14">14</div>
+			<div id="sq20">20</div>
+			<div id="sq26">26</div>
+			<div id="sq32">32</div>
+			<div id="sq38">38</div>
+			<div id="sq1">1</div>
+			<div id="sq7">7</div>
+			<div id="sq13">13</div>
+			<div id="sq19">19</div>
+			<div id="sq25">25</div>
+			<div id="sq31">31</div>
+			<div id="sq37">37</div>
+			<div id="sq0">0</div>
+			<div id="sq6">6</div>
+			<div id="sq12">12</div>
+			<div id="sq18">18</div>
+			<div id="sq24">24</div>
+			<div id="sq30">30</div>
+			<div id="sq36">36</div>
+		</div>
+		
+
+
+		<!--- <script type="module" src="game.js"></script> --->
+	<script type="text/javascript" src="js/bundle.js"></script></body>
+
+
+</html>
