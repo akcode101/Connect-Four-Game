@@ -1,0 +1,137 @@
+body {
+	background-color: LightBlue;
+}
+
+
+h1,p
+{
+  text-align: center;
+}
+.grid-container, .columnButtons {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);/*auto auto auto auto auto auto auto; */
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container
+{
+  background-color: Peru;
+}
+
+.columnButtons
+{
+  background-color: BurlyWood;
+}
+
+.columnButtons > button {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.grid-container > div {
+  /*background-color: white; */
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+#player1Score
+{
+	background-color:red;
+}
+
+#player2Score
+{
+	background-color:blue;
+}
+
+
+
+.scoreBoard, .gameContainer
+{
+	background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*
+    grid gap: 10px;
+    padding 10px;
+    */
+    margin-bottom: 1cm;
+    text-align: center;
+}
+
+.scoreBoard
+{
+  background-color:grey;
+}
+
+/*
+.gameContainer
+{
+  background-color: 
+}
+*/
+
+.gameContainer 
+{
+	  background-color: red; 
+    /*display: grid;
+    grid-template-columns: auto auto; 
+    margin-bottom: 1cm;*/
+
+    /*
+    grid gap: 10px;
+    padding 10px;
+    */
+    
+
+}
+
+.possibleColumn
+{
+  background-color: Mocassin;
+}
+
+.disabledColumn
+{
+  
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: gray;
+  opacity: 0.6;
+  /*
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  */
+}
+
+.playerOneMove
+{
+  background-color: red;
+}
+
+.playerOneWinning
+{
+  background-color: orange;
+}
+
+
+
+.playerTwoMove
+{
+  background-color: blue;
+}
+
+.playerTwoWinning
+{
+  background-color: aqua;
+}
+
+
+
+.emptySquare
+{
+  background-color: white;
+}
