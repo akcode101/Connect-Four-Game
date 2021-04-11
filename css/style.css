@@ -3,37 +3,53 @@ body {
 }
 
 
-h1,p
+h1,p, div, button
 {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
+
+
 .grid-container, .columnButtons {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);/*auto auto auto auto auto auto auto; */
+  
+  /*grid-template-columns: repeat(7, 1fr); */
+  /*grid-template-columns: 70px 70px 70px 70px 70px 70px 70px;  */
+  width: 40%;
+  grid-template-columns: repeat(7, auto); 
   grid-gap: 10px;
   padding: 10px;
+  margin: auto;
+  /* color: white; */
 }
 
 .grid-container
 {
-  background-color: Peru;
+  background-color: DarkGray;
+  color: DarkGray;
+  grid-template-rows: repeat(6, 50px);
 }
 
 .columnButtons
 {
   background-color: BurlyWood;
+  grid-template-rows: 30px;
 }
 
 .columnButtons > button {
-  border: 1px solid black;
+  border: 0;
   text-align: center;
+  background-color: Moccasin;
+  color: Moccasin;
+  /*margin: auto; */
 }
 
 .grid-container > div {
   /*background-color: white; */
-  border: 1px solid black;
+  border: 0;
   text-align: center;
-  font-size: 30px;
+  /* margin: auto; */
+  /* font-size: 30px; */
 }
 
 #player1Score
@@ -50,9 +66,10 @@ h1,p
 
 .scoreBoard, .gameContainer
 {
-	background-color: grey;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    width: 40%;
+    grid-template-columns: auto auto;
+    margin: auto;
     /*
     grid gap: 10px;
     padding 10px;
@@ -64,6 +81,7 @@ h1,p
 .scoreBoard
 {
   background-color:grey;
+  color: white;
 }
 
 /*
@@ -76,6 +94,7 @@ h1,p
 .gameContainer 
 {
 	  background-color: red; 
+    color: white;
     /*display: grid;
     grid-template-columns: auto auto; 
     margin-bottom: 1cm;*/
@@ -90,16 +109,20 @@ h1,p
 
 .possibleColumn
 {
-  background-color: Mocassin;
+  background-color: Moccasin;
+  color: Moccasin;
 }
 
 .disabledColumn
 {
   
+  
   pointer-events: none;
   cursor: not-allowed;
-  background-color: gray;
-  opacity: 0.6;
+  background-color: black;
+  color: black;
+  opacity: 0.4;
+  
   /*
   filter: alpha(opacity=65);
   -webkit-box-shadow: none;
@@ -110,11 +133,13 @@ h1,p
 .playerOneMove
 {
   background-color: red;
+  color:red;
 }
 
 .playerOneWinning
 {
   background-color: orange;
+  color:orange;
 }
 
 
@@ -122,11 +147,13 @@ h1,p
 .playerTwoMove
 {
   background-color: blue;
+  color:blue;
 }
 
 .playerTwoWinning
 {
   background-color: aqua;
+  color:aqua;
 }
 
 
@@ -134,4 +161,5 @@ h1,p
 .emptySquare
 {
   background-color: white;
+  color: white;
 }
