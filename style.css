@@ -3,15 +3,19 @@ body {
 }
 
 
-h1,p
+h1,p, h2
 {
   text-align: center;
+  font-family: "Open Sans";
 }
 .grid-container, .columnButtons {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto;
+  /* grid-template-columns: auto auto auto auto auto auto auto; 
+  grid-template-columns: 15px 15px 15px 15px 15px 15px 15px; */
+  /*
   grid-gap: 10px;
   padding: 10px;
+  */
 }
 
 .grid-container
@@ -28,7 +32,7 @@ h1,p
   background-color: white;
   border: 1px solid black;
   text-align: center;
-  font-size: 30px;
+  font-size: 10px;
 }
 
 #player1Score
@@ -59,10 +63,6 @@ h1,p
   background-color:grey;
 }
 
-.gameContainer
-{
-  background-color: 
-}
 
 .gameContainer 
 {

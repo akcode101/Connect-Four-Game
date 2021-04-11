@@ -22,12 +22,12 @@ module.exports = {
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				use: {
+				use: [ {
 					loader: 'babel-loader'
-				}
+				} ]
 			}
 
 		]
-	}
-	
+	},
+    devtool: 'eval-cheap-source-map',	
 };

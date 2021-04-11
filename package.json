@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "Connect four game",
   "main": "game.js",
+  "homepage": "http://akcode101.github.io/Connect-Four-Game",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode development --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Anshul Kale",
   "license": "ISC",
@@ -14,6 +17,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
